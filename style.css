@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+}
+header{
+    display: flex;
+    background: black;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid pink;
+    padding: 15px;
+    margin-bottom: 36px;
+    
+    nav{
+        display: flex;
+        
+    
+        a{
+            text-decoration: none;
+            font-size: 2em;
+    
+            }
+            li{
+                list-style: none;
+                -webkit-text-stroke: 1px white;
+                padding: 10px;
+                background: pink;  
+                margin: 5px;
+                color: black;
+
+            }
+            li:hover{
+                background: crimson;
+                color: #fff;
+                transition: .3s;
+            }
+        }
+    }
+
+.hamburguesa{
+    display: none;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    
+    
+
+    
+    img{
+        width: 100px;
+    }
+    img:hover{
+        transform: scale(120%);
+        transition: .3s;
+    }
+    a{
+        text-decoration: none;
+    }
+    p:hover{
+        color: red;
+
+  
+    }
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat( 2, 650px);
+    grid-auto-rows: 400px;
+    gap: 50px 40px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    padding: 30px;
+   
+        
+}
+.im1{
+    width:350px;
+    height: fit-content;
+}
+.im2{
+    width: 350px;
+    height: fit-content;
+}
+.im3{
+    width: 350px;
+    height: fit-content;
+}
+.im4{
+    width: 350px;
+    height: fit-content;
+}
+.whatsapp{
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    i{
+        font-size: 3em;
+        color: green;
+        padding: 15px;
+        background: pink;
+        border-radius: 20px;
+    }
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid pink;
+
+}
+.logoFooter{
+    display: flex;
+    flex-direction: column;
+    a{ 
+        text-decoration: none;
+        img{
+            width: 80px;
+
+        }
+
+    }
+
+
+}
+.socialMedia{
+    text-decoration: none;
+    i{
+        font-size: 2.5em;
+        color: blueviolet;
+        margin: 5px;
+    }
+    i:hover{
+        color: crimson;
+    }
+}
+@media screen and ( max-width:800px) {
+    .logo{
+        img{
+            width: 60px;
+        }
+
+    }
+       nav{
+        display: none;
+        
+        }
+        .hamburguesa{
+            display: block;
+            
+        }
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        img{
+            width: 500px;
+        }
+        .whatsapp{
+            position: fixed;
+            right: 80px;
+        }
+    }
+    

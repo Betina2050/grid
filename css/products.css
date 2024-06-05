@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid pink;
+    padding: 15px;
+    nav{
+        display: flex;
+        a{
+            text-decoration: none;
+            li{
+                list-style: none;
+                padding: 10px;
+                background: pink;  
+                margin: 5px;
+                color: black;
+
+            }
+            li:hover{
+                background: crimson;
+                color: #fff;
+                transition: .3s;
+            }
+        }
+    }
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 100px;
+    }
+    img:hover{
+        transform: scale(120%);
+        transition: .3s;
+    }
+    a{
+        text-decoration: none;
+    }
+    p:hover{
+        color: red;
+
+    }
+}
